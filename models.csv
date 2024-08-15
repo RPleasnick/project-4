@@ -1,5 +1,5 @@
 model, target, MAE, RMSE, R^2, trees, dropped_columns
-Linear Regression, appliances, 53.4002964, 92.375509, 0.147281, 100, 'Appliances, lights'	
+Linear Regression, appliances, 53.4002964, 92.375509, 0.147281, 100, 'Appliances lights'	
 Random Forest, appliances, 29.994552, 63.776723, 0.593541, 100, "Appliances, lights"
 Linear Regression, lights, 4.870464, 6.893687, 0.224110, 100, "Appliances, lights"
 Random Forest, lights, 2.364124, 4.279512, 0.700990, 100, "Appliances, lights"
