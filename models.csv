@@ -1,0 +1,3 @@
+target,	MAE,	RMSE,	R^2,	trees,	dropped_columns
+appliances,	53.4002964,	92.37550912,	0.147281202,	100, "Appliances, lights"	
+lights,	29.99455282,	63.77672351,	0.593541178,	100, "Appliances, lights"
