@@ -1,3 +1,15 @@
-target,	MAE,	RMSE,	R^2,	trees,	dropped_columns
-appliances,	53.4002964,	92.37550912,	0.147281202,	100, "Appliances, lights"	
-lights,	29.99455282,	63.77672351,	0.593541178,	100, "Appliances, lights"
+model, target, MAE, RMSE, R^2, trees, dropped_columns
+Linear Regression, appliances, 53.4002964, 92.375509, 0.147281, 100, 'Appliances, lights'	
+Random Forest, appliances, 29.994552, 63.776723, 0.593541, 100, "Appliances, lights"
+Linear Regression, lights, 4.870464, 6.893687, 0.224110, 100, "Appliances, lights"
+Random Forest, lights, 2.364124, 4.279512, 0.700990, 100, "Appliances, lights"
+Linear Regression, appliances, 53.450595, 92.623712, 0.142692, 100, "T_out, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights"
+Random Forest, appliances, 29.104839, 62.757646, 0.606426, 100,  "T_out, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights"
+Linear Regression, lights, 4.902674, 6.925318, 0.216974, 100,  "T_out, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights"
+Random Forest, lights, 2.309450, 4.29683, 0.6985650, 100,  "T_out, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights"
+Linear Regression, appliances, 53.543313,  92.767754,  0.140024, 100, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
+Random Forest, appliances, 29.053590,  63.302780,  0.599560, 100, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
+Linear Regression, lights, 4.913036,  6.934366,  0.214927, 100, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
+Random Forest, lights, 2.298860,  4.278542,  0.701126, 100, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
+Random Forest, lights, 2.310412,  4.319875,  0.695323, 50, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
+Random Forest, lights, 2.307398,  4.279472,  0.700995 , 500, "Press_mm_hg, RH_out, Windspeed, Visibility, Tdewpoint, rv1, rv2, Appliances, lights, T6, RH_6"
