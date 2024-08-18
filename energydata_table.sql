@@ -1,3 +1,6 @@
+--  Use to create table in SQL database  (pgAdmin/PostgreSQL)
+--  Once table is created, load resources\energydata_complete.csv
+
 -- Drop table if exists
 Drop TABLE energydata;
 
@@ -36,4 +39,24 @@ CREATE TABLE energydata (
 
 -- View table columns
 SELECT * from energydata
+limit 10;
+
+
+-- Drop table if exists
+Drop TABLE energydata_avg;
+
+-- Create new table with average temperatures and average humidity
+SELECT 
+    date,
+    (SELECT AVG(val_temp) 
+     FROM (VALUES (T1), (T2), (T3), (T4), (T5), (T6), (T7), (T8), (T9)) AS temp(val_temp)
+    ) AS avg_temp,
+    (SELECT AVG(val_humidity)
+     FROM (VALUES (RH_1), (RH_2), (RH_3), (RH_4), (RH_5), (RH_6), (RH_7), (RH_8), (RH_9)) AS hum(val_humidity)
+    ) AS avg_humidity
+FROM
+    energydata;
+
+    -- View table columns
+SELECT * from energydata_avg
 limit 10;
