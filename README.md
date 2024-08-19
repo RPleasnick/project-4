@@ -31,6 +31,12 @@ The best model to predict energy usage of appliances was the ExtraTreesRegressio
 ![image](https://github.com/user-attachments/assets/afb4384a-62d4-4f43-bc15-2ae3c34a6567)
 
 
+Time-based features (hour, day) played a crucial role, highlighting the daily and seasonal variability in energy usage as well.
+
+Real-World Applications:
+The model can be integrated into smart home systems to optimize energy consumption and reduce costs.
+Businesses and homeowners could leverage such predictive models to manage energy usage more efficiently and sustainably.
+
 ##  References: 
 
 L. Candanedo, *et al,* "Data driven prediction models of energy use of appliances in a low-energy house," *Energy and Buildings* **140** (2017), https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction
